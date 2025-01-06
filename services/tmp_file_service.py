@@ -13,5 +13,5 @@ class TmpFileService:
             return self.file_registry.pop(uuid)
 
     def get_path(self, uuid: str):
-        if uuid not in self.file_registry:
+        if uuid in self.file_registry:
             return self.file_registry[uuid]
